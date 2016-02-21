@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+body {
+
+}
+.row {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.main {
+    display: block;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.header {
+    @extend .main;
+
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+        @extend .row;
+        height: 60px;
+
+        background: rgba(216, 216, 216, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    &__logo {
+        display: inline-block;
+        width: 150px;
+        margin-top: 6px;
+
+        font: 700 18px/24px Roboto, sans-serif;
+        color: #404040;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            color: #6fabff;
+            font-size: 26px;
+        }
+    }
+    &__slogan {
+        font: 500 18px/60px Roboto, sans-serif;
+    }
+    &__phone {
+        margin-top: 2px;
+        text-align: left;
+        font: 500 16px/18px Roboto, sans-serif;
+    }
+}
+.content {
+    @extend .main;
+
+    padding: 20px 0 0;
+
+    text-align: center;
+
+    font: 400 18px/18px Roboto, sans-serif;
+
+    &__wrapper {
+        @extend .row;
+    }
+    &__text {
+        padding: 20px 0 0;
+    }
+    &__phone {
+        display: inline-block;
+        padding: 40px 0 0;
+
+        span {
+            display: block;
+            padding: 0 0 10px;
+        }
+    }
+    &__bottle {
+        display: block;
+        width: 500px;
+        height: 333px;
+        margin: 40px auto 0;
+
+        background: url("../img/water-bottles-small.jpg") 0 0 no-repeat;
+    }
+}
+.footer {
+    @extend .main;
+
+    &__wrapper {
+        @extend .row;
+    }
+}
